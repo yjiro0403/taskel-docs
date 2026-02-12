@@ -1,0 +1,71 @@
+
+# Task Management
+
+## Basic Operations
+
+- **Edit**: Click on a task to edit its details.
+- **Complete**: Click the checkbox to mark the task as Done.
+- **Delete**: Click the trash icon to delete.
+- **Duplicate**: Click the duplicate icon to copy the task with the same content.
+
+## Bulk Actions
+
+You can select multiple tasks and perform actions on them at once.
+
+1. Click the selection circle on the left side of the task. You can select multiple tasks.
+2. A bulk action menu will appear at the top of the screen.
+3. The following actions are possible:
+    - **Delete**: Delete all selected tasks
+    - **Change Date**: Move selected tasks to another date
+
+## Filtering
+
+You can narrow down tasks using the search function in the right sidebar.
+
+- **Text Search**: Search by title or memo content
+- **Project**: Show only tasks for a specific project
+- **Tag**: Show only tasks with a specific tag
+
+## Task Display Order
+
+Tasks within each section are automatically sorted by the following priority:
+
+| Priority | Rule | Description |
+|----------|------|-------------|
+| 1 | **Status** | Done → In Progress → Open |
+| 2 | **Scheduled Time** | Scheduled tasks are sorted by `scheduledStart` in ascending order |
+| 3 | **Schedule Presence** | Scheduled tasks appear above unscheduled tasks |
+| 4 | **Manual Order** | Tasks follow the `order` set by drag-and-drop |
+
+### Status Grouping
+
+Within the same section, **completed tasks always appear at the top**.
+This creates a timeline view where your daily progress is visible at a glance.
+
+- ✅ Done → Top of the section
+- ▶️ In Progress → Middle
+- ○ Open → Bottom of the section
+
+### Chronological Order
+
+Scheduled tasks are ordered by `scheduledStart` (planned start time) in ascending order.
+
+Example: If tasks in the same section are scheduled at 09:00, 10:30, and 11:00, they will appear in that order.
+
+## Drag & Drop (Reordering)
+
+All tasks (including scheduled and completed ones) can be reordered by dragging.
+
+### Reordering Within a Section
+
+Drag a task and drop it to another position within the same section.
+The `order` value is automatically calculated based on the drop position.
+
+### Moving Between Sections
+
+Drag a task to a different section to move it there.
+It will be inserted at the end of the target section or at the specified position.
+
+### Importing Unscheduled Tasks
+
+Drag unscheduled tasks from the right sidebar into the main timeline to assign them to a section.
