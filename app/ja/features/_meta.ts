@@ -10,5 +10,6 @@ export default {
     notes: 'ノート・振り返り',
     projects: 'プロジェクト管理',
     analytics: 'アナリティクス',
-    'calendar-sync': 'Googleカレンダー連携'
+    'calendar-sync': 'Googleカレンダー連携',
+    'ai-assistant': 'AIアシスタント'
 }

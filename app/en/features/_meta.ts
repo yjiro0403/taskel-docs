@@ -10,5 +10,6 @@ export default {
     notes: 'Notes & Review',
     projects: 'Project Management',
     analytics: 'Analytics',
-    'calendar-sync': 'Google Calendar Sync'
+    'calendar-sync': 'Google Calendar Sync',
+    'ai-assistant': 'AI Assistant'
 }

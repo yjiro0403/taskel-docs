@@ -1,0 +1,166 @@
+
+# AI Assistant
+
+Taskel comes with a built-in AI assistant that supports your task management through natural conversation. Add tasks, check your progress, and review your day — all through chat.
+
+> **User Agency**: The AI only makes "suggestions". It never creates or modifies tasks without your explicit confirmation. You always have the final say.
+
+---
+
+## Opening the AI Assistant
+
+Click the **Sparkles button** at the bottom-right of the screen. The AI chat panel slides in from the right.
+
+{/* ![AI Chat Panel](/images/ai-chat-panel.png) */}
+
+---
+
+## What You Can Do
+
+| Feature | Example Prompt |
+|---------|---------------|
+| **Add a task** | "Add a task for writing the report" |
+| **Start immediately** | "Start working on email replies now" |
+| **Check today** | "Show me today's tasks" |
+| **Check goals** | "What are my goals for this month?" |
+| **Break down goals** | "Break down this goal into tasks" |
+| **Estimation accuracy** | "Check my estimation accuracy" |
+| **Daily review** | "Review my day" |
+
+---
+
+## Adding Tasks
+
+Simply tell the AI what you want to do, and it will suggest a task as a preview card.
+
+**Example: "Review the proposal at 2pm, about 45 minutes"**
+
+The AI automatically determines:
+- **Task name**: "Review the proposal"
+- **Start time**: 14:00
+- **Estimated time**: 45 minutes
+- **Section**: Automatically placed in the Afternoon section
+
+Review the suggestion card and press **"Create"** to add it. You can edit the title, time, or other details before creating.
+
+### Start Immediately Mode
+
+Phrases like "**Start** email replies **now**" or "**Interruption** — phone call" will create the task and auto-start the timer. Any running task is automatically paused.
+
+---
+
+## Checking Today's Tasks
+
+Ask **"Show me today's tasks"** to see a quick summary:
+
+- Total task count
+- Completed / Open / In Progress breakdown
+- Total estimated vs actual time
+
+Ask "Suggest what I should do today" for AI-powered task recommendations based on your current situation.
+
+---
+
+## Goal Integration
+
+### Viewing Goals
+
+Ask **"What are my goals this month?"** to see all active goals — yearly, monthly, and weekly.
+
+### Goal Breakdown
+
+Tell the AI **"Break down this goal into tasks"** and it will:
+
+1. Check the goal's content and existing tasks
+2. Suggest ~5 new tasks that don't duplicate existing ones
+3. Show a batch preview for you to check and create
+
+Each task is automatically linked to the goal for progress tracking.
+
+---
+
+## Time Calibration
+
+Ask **"Check my estimation accuracy"** to see a report analyzing gaps between your estimates and actual time spent.
+
+### Calibration Report Includes
+
+- **Accuracy ratio**: Actual / Estimated (100% is ideal)
+- **Average deviation**: How far off your estimates are on average
+- **Most deviated tasks**: Top 5 biggest gaps
+- **Category accuracy**: Trends by tag
+
+{/* ![Calibration Report](/images/calibration-report.png) */}
+
+### How It Helps
+
+When calibration data is available, the AI automatically adjusts time estimates when suggesting tasks.
+
+> Example: If you tend to exceed estimates by 50%, the AI might say:
+> "This type of task usually takes about 45 minutes. Shall I estimate 45 minutes?"
+
+---
+
+## Daily Review
+
+Ask **"Review my day"** to generate a comprehensive end-of-day report.
+
+### Report Includes
+
+- **Completion rate**: Large number with progress bar
+- **Stats**: Completed / Incomplete / Total time / Estimation accuracy
+- **Completed tasks**: Title + Estimate vs Actual (color-coded deviation)
+- **Incomplete tasks**: Status display (In Progress / Not Started)
+- **Skipped tasks**: Listed
+- **Goal progress**: Per-goal breakdown for today's work
+- **AI message**: Feedback based on completion rate
+
+{/* ![Daily Review Report](/images/daily-review.png) */}
+
+### Feedback Based on Completion Rate
+
+| Rate | Example Message |
+|------|----------------|
+| 80%+ | "Great day! Well done!" |
+| 50-79% | "Steady progress" |
+| Below 50% | "Let's organize what to carry over to tomorrow" |
+
+### Review Previous Days
+
+Ask **"Review yesterday"** to generate a report for the previous day.
+
+---
+
+## Tips for Best Use
+
+### Morning Routine
+
+> "Show me today's tasks" → Quick status check
+> "What are my goals this week?" → Priority alignment
+> "Add a task for..." → Fill in missing tasks
+
+### During Work
+
+> "Start writing the report now" → Create task + auto-start timer
+> "Interruption — client call" → Auto-pause current task, start new one
+
+### Evening Review
+
+> "Review my day" → See your achievements
+> "Check my estimation accuracy" → Tune your time sense
+
+---
+
+## FAQ
+
+### Will the AI create tasks without my permission?
+
+No. The AI only makes "suggestions". A preview card is shown, and nothing is written to the database until you press the "Create" button. You can dismiss any suggestion.
+
+### Which AI model is used?
+
+Gemini 2.5 Flash is used by default. You can switch models using the selector in the chat panel.
+
+### Is my conversation history saved?
+
+Conversations are displayed during the session but reset when you close the panel. Only tasks you explicitly create are saved to Firestore.
