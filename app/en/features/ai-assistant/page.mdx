@@ -3,7 +3,12 @@
 
 Taskel comes with a built-in AI assistant that supports your task management through natural conversation. Add tasks, check your progress, and review your day — all through chat.
 
+> **💡 WHY — Assist, not Delegate**
+> AI functions as a "mirror." It shows your past data and suggests patterns. But it doesn't estimate for you or change your priorities. You estimate, you decide, you reflect — this "do it yourself" process is protected.
+
 > **User Agency**: The AI only makes "suggestions". It never creates or modifies tasks without your explicit confirmation. You always have the final say.
+
+> **Pricing**: Some AI features are available on paid plans only. Basic features like adding tasks and checking today's tasks are free. Advanced analytics such as Goal Breakdown, Time Calibration, and Daily Review require the Pro plan. See the pricing page for details.
 
 ---
 
@@ -11,21 +16,21 @@ Taskel comes with a built-in AI assistant that supports your task management thr
 
 Click the **Sparkles button** at the bottom-right of the screen. The AI chat panel slides in from the right.
 
-{/* ![AI Chat Panel](/images/ai-chat-panel.png) */}
+![AI Chat Panel](/images/ai-chat-panel.png)
 
 ---
 
 ## What You Can Do
 
-| Feature | Example Prompt |
-|---------|---------------|
-| **Add a task** | "Add a task for writing the report" |
-| **Start immediately** | "Start working on email replies now" |
-| **Check today** | "Show me today's tasks" |
-| **Check goals** | "What are my goals for this month?" |
-| **Break down goals** | "Break down this goal into tasks" |
-| **Estimation accuracy** | "Check my estimation accuracy" |
-| **Daily review** | "Review my day" |
+| Feature | Example Prompt | Plan |
+|---------|---------------|------|
+| **Add a task** | "Add a task for writing the report" | Free |
+| **Start immediately** | "Start working on email replies now" | Free |
+| **Check today** | "Show me today's tasks" | Free |
+| **Check goals** | "What are my goals for this month?" | Free |
+| **Break down goals** | "Break down this goal into tasks" | Pro |
+| **Estimation accuracy** | "Check my estimation accuracy" | Pro |
+| **Daily review** | "Review my day" | Pro |
 
 ---
 
@@ -39,13 +44,15 @@ The AI automatically determines:
 - **Task name**: "Review the proposal"
 - **Start time**: 14:00
 - **Estimated time**: 45 minutes
-- **Section**: Automatically placed in the Afternoon section
+- **Section**: Automatically placed in the Afternoon section based on the time
 
 Review the suggestion card and press **"Create"** to add it. You can edit the title, time, or other details before creating.
 
+![AI Task Suggestion Card](/images/ai-task-suggestion.png)
+
 ### Start Immediately Mode
 
-Phrases like "**Start** email replies **now**" or "**Interruption** — phone call" will create the task and auto-start the timer. Any running task is automatically paused.
+Phrases like "**Start** email replies **now**" or "**Interruption** — phone call" will create the task and auto-start the timer. Any running task is automatically paused, making interruptions smooth.
 
 ---
 
@@ -53,8 +60,9 @@ Phrases like "**Start** email replies **now**" or "**Interruption** — phone ca
 
 Ask **"Show me today's tasks"** to see a quick summary:
 
+Display includes:
 - Total task count
-- Completed / Open / In Progress breakdown
+- Completed / Incomplete / In Progress breakdown
 - Total estimated vs actual time
 
 Ask "Suggest what I should do today" for AI-powered task recommendations based on your current situation.
@@ -71,11 +79,11 @@ Ask **"What are my goals this month?"** to see all active goals — yearly, mont
 
 Tell the AI **"Break down this goal into tasks"** and it will:
 
-1. Check the goal's content and existing tasks
+1. Analyze the goal's content and check existing tasks
 2. Suggest ~5 new tasks that don't duplicate existing ones
-3. Show a batch preview for you to check and create
+3. Show a batch preview for you to check and select which to create
 
-Each task is automatically linked to the goal for progress tracking.
+Each task is automatically linked to the goal, so task completion is reflected in goal progress.
 
 ---
 
@@ -90,7 +98,7 @@ Ask **"Check my estimation accuracy"** to see a report analyzing gaps between yo
 - **Most deviated tasks**: Top 5 biggest gaps
 - **Category accuracy**: Trends by tag
 
-{/* ![Calibration Report](/images/calibration-report.png) */}
+![Calibration Report](/images/ai-calibration.png)
 
 ### How It Helps
 
@@ -107,15 +115,15 @@ Ask **"Review my day"** to generate a comprehensive end-of-day report.
 
 ### Report Includes
 
-- **Completion rate**: Large number with progress bar
+- **Completion rate**: Large number with progress bar for quick overview
 - **Stats**: Completed / Incomplete / Total time / Estimation accuracy
-- **Completed tasks**: Title + Estimate vs Actual (color-coded deviation)
+- **Completed tasks**: Title + Estimate → Actual (color-coded deviation)
 - **Incomplete tasks**: Status display (In Progress / Not Started)
 - **Skipped tasks**: Listed
 - **Goal progress**: Per-goal breakdown for today's work
 - **AI message**: Feedback based on completion rate
 
-{/* ![Daily Review Report](/images/daily-review.png) */}
+![Daily Review Report](/images/ai-daily-review.png)
 
 ### Feedback Based on Completion Rate
 
@@ -155,7 +163,7 @@ Ask **"Review yesterday"** to generate a report for the previous day.
 
 ### Will the AI create tasks without my permission?
 
-No. The AI only makes "suggestions". A preview card is shown, and nothing is written to the database until you press the "Create" button. You can dismiss any suggestion.
+No. The AI only makes "suggestions". A preview card is shown, and nothing is written to the database until you press the "Create" button. You can dismiss any suggestion with the "Reject" button.
 
 ### Which AI model is used?
 

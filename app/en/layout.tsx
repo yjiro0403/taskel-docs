@@ -5,7 +5,7 @@ import 'nextra-theme-docs/style.css'
 
 export const metadata = {
     title: 'Taskel Documentation (EN)',
-    description: 'Taskel - The Task Management OS for Executors.',
+    description: 'Taskel - Goals and today, always connected.',
 }
 
 const banner = <Banner storageKey="taskel-beta-banner">Taskel Alpha Version is now available! 🎉</Banner>
