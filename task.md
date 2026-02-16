@@ -25,6 +25,6 @@ Docs: [taskel-docs](https://github.com/yjiro0403/taskel-docs)
 - [x] Verify startup after folder move
 
 ## 🐙 Git & GitHub Setup
-- [ ] Initialize Git repository
-- [ ] Create GitHub repository
-- [ ] Push to GitHub
+- [x] Initialize Git repository
+- [x] Create GitHub repository
+- [x] Push to GitHub
